@@ -1,0 +1,156 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+section {
+    margin-top: 50px;
+    height: 800px;
+    flex: 1;
+
+    .section-title {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 150px;
+        font-size: 30px;
+    }
+
+    .cards {
+        margin-top: 70px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .card {
+        width: 400px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .card-content {
+        padding: 60px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .card-content h1 {
+        font-size: 25px;
+        margin: 0;
+        width: 600px;
+    }
+
+    .card-content p {
+        font-size: 30px;
+        color: #ff0000;
+        margin: 10px 0;
+        display: flex;
+        justify-content: center;
+        width: 250px;
+    }
+
+    .button {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        padding: 10px 0px;
+        font-family: 'Montserrat', sans-serif;
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    @media screen and (max-width: 1300px) {
+        .cards {
+            display: flex;
+            flex-direction: column;
+            margin-left: 40%;
+            gap: 40px;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        .section-title {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            gap: 50px;
+            font-size: 30px;
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        .cards {
+            display: flex;
+            flex-direction: column;
+            margin-left: 20%;
+            gap: 40px;
+            
+        } 
+    }
+
+    @media screen and (max-width: 630px) {
+        .section-title {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 40px;
+            font-size: 30px;
+            margin-left: 30%;
+        }
+      
+        .cards {
+            display: flex;
+            flex-direction: column;
+            margin-left: 10%;
+            gap: 40px;
+        }
+        
+        .card-content h1 {
+            font-size: 25px;
+            width: 200px;
+        }
+    }
+
+
+    @media screen and (max-width: 530px) {
+        .cards {
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+            gap: 40px;
+        }
+        
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .main-header{
+        display: flex;
+        gap: 0px;
+        margin-top: 00px;
+        .right-photo {
+            img{  
+        
+             width: 200px;
+            height: 200px;    
+            }
+       
+            
+        }
+    }
+}
+
+//sousebi

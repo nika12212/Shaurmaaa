@@ -1,0 +1,592 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul, li {
+  list-style: none;
+  text-decoration: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 750px;
+  background-image: url("../../images/shaurma_banner.png");
+  border-radius: 44px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0;
+}
+header .header_data {
+  padding-top: 4%;
+  padding-left: 7%;
+  display: flex;
+  max-width: 100%;
+  gap: 45%;
+}
+header .header_data .header-right img {
+  height: auto;
+  padding: 0;
+}
+header .header_data .header-left {
+  display: flex;
+  max-width: 400px;
+  margin-top: 1px;
+}
+header .header_data .header-left .header-left-gap {
+  display: flex;
+  gap: 50px;
+}
+header .header_data .header-left .header-left1 {
+  display: flex;
+}
+header .header_data .header-left .header-left2 {
+  display: flex;
+  height: 60px;
+  margin-top: 15px;
+}
+header .header_data .header-left h4 {
+  font-size: 30px;
+  color: white;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+header .left-text {
+  margin-top: 10%;
+  margin-left: 17%;
+  width: 30%;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+header .left-text h1 {
+  font-size: 60px;
+}
+header .left-text h3 {
+  font-size: 40px;
+}
+header .main-header {
+  display: flex;
+  gap: 150px;
+}
+header .main-header .right-photo {
+  padding-top: 10%;
+}
+header .main-header .right-photo img {
+  width: 400px;
+  height: 400px;
+}
+@media screen and (max-width: 830px) {
+  header .main-header {
+    display: flex;
+    gap: 0px;
+  }
+  header .main-header .right-photo {
+    padding: 0px;
+  }
+  header .main-header .right-photo img {
+    width: 200px;
+    height: 200px;
+  }
+  header .header_data {
+    gap: 0px;
+    flex-direction: column;
+  }
+  header .left-text {
+    margin-top: 10%;
+    margin-left: 17%;
+    width: 30%;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+  }
+  header .left-text h1 {
+    font-size: 40px;
+  }
+  header .left-text h3 {
+    font-size: 20px;
+  }
+  header .header-left {
+    max-width: 100%;
+    margin-top: 40px;
+    margin-left: 30px;
+  }
+  header .header-left-gap {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 790px) {
+  header .main-header {
+    display: flex;
+    gap: 0px;
+  }
+  header .main-header .right-photo {
+    padding: 0px;
+  }
+  header .main-header .right-photo img {
+    width: 200px;
+    height: 200px;
+  }
+  header .header_data {
+    gap: 40px;
+  }
+  header .left-text {
+    margin-top: 10%;
+    margin-left: 17%;
+    width: 30%;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+  }
+  header .left-text h1 {
+    font-size: 40px;
+  }
+  header .left-text h3 {
+    font-size: 20px;
+  }
+  header .header-left {
+    max-width: 100%;
+    margin-top: 40px;
+    margin-left: 30px;
+  }
+  header .header-left-gap {
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 1180px) {
+  header .main-header {
+    display: flex;
+    margin-left: 30%;
+    gap: 0px;
+  }
+  header .main-header .right-photo {
+    padding: 0px;
+  }
+  header .main-header .right-photo img {
+    width: 200px;
+    height: 200px;
+    margin-left: 30%;
+  }
+  header .header_data {
+    gap: 20px;
+  }
+  header .left-text {
+    margin-top: 10%;
+    margin-left: 17%;
+    width: 30%;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+  }
+  header .left-text h1 {
+    font-size: 40px;
+  }
+  header .left-text h3 {
+    font-size: 20px;
+  }
+  header .header-left {
+    max-width: 100%;
+    margin-top: 40px;
+    margin-left: 30px;
+  }
+  header .header-left-gap {
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 980px) {
+  header .main-header {
+    display: flex;
+    gap: 0px;
+  }
+  header .main-header .right-photo {
+    padding: 0px;
+  }
+  header .main-header .right-photo img {
+    width: 200px;
+    height: 200px;
+  }
+  header .header_data {
+    gap: 20px;
+  }
+  header .main-header {
+    display: flex;
+    gap: 0px;
+  }
+  header .main-header .right-photo img {
+    width: 200px;
+    height: 200px;
+    padding-top: 25%;
+  }
+  header .left-text {
+    margin-top: 10%;
+    margin-left: 17%;
+    width: 30%;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+  }
+  header .left-text h1 {
+    font-size: 50px;
+  }
+  header .left-text h3 {
+    font-size: 30px;
+  }
+  header .header-left {
+    max-width: 100%;
+    margin-top: 40px;
+    margin-left: 30px;
+  }
+  header .header-left-gap {
+    gap: 50px;
+  }
+}
+@media screen and (max-width: 1180px) {
+  header .main-header {
+    display: flex;
+    gap: 0px;
+    margin-top: 120px;
+  }
+  header .main-header .right-photo {
+    padding: 0px;
+  }
+  header .main-header .right-photo img {
+    width: 200px;
+    height: 200px;
+  }
+  header .main-header {
+    display: flex;
+    margin-right: 60%;
+  }
+  header .main-header .right-photo {
+    padding-top: 10%;
+  }
+  header .main-header .right-photo img {
+    width: 400px;
+    height: 400px;
+  }
+  header .header_data {
+    gap: 30px;
+  }
+  header .left-text {
+    margin-top: 10%;
+    margin-left: 17%;
+    width: 30%;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+  }
+  header .left-text h1 {
+    font-size: 40px;
+  }
+  header .left-text h3 {
+    font-size: 20px;
+  }
+  header .header-left {
+    max-width: 100%;
+    margin-top: 40px;
+    margin-left: 30px;
+  }
+  header .header-left-gap {
+    gap: 50px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  header .main-header {
+    display: flex;
+    gap: 0px;
+    margin-top: 0px;
+  }
+  header .main-header .right-photo img {
+    margin-top: 200px;
+    width: 250px;
+    height: 300px;
+  }
+  header .header_data {
+    gap: 40px;
+  }
+  header .left-text {
+    margin-top: 10%;
+    margin-left: 17%;
+    width: 30%;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+  }
+  header .left-text h1 {
+    font-size: 40px;
+  }
+  header .left-text h3 {
+    font-size: 20px;
+  }
+  header .header-left {
+    max-width: 100%;
+    margin-top: 40px;
+    margin-left: 30px;
+  }
+  header .header-left-gap {
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  header .main-header {
+    display: flex;
+    gap: 0px;
+  }
+  header .main-header .right-photo {
+    padding: 40% 0px 0px 0px;
+  }
+  header .main-header .right-photo img {
+    width: 200px;
+    height: 200px;
+  }
+  header .header_data {
+    gap: 40px;
+  }
+  header .left-text {
+    margin-top: 10%;
+    margin-left: 17%;
+    width: 30%;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+  }
+  header .left-text h1 {
+    font-size: 40px;
+  }
+  header .left-text h3 {
+    font-size: 20px;
+  }
+  header .header-left {
+    max-width: 100%;
+    margin-top: 40px;
+    margin-left: 30px;
+  }
+  header .header-left-gap {
+    gap: 30px;
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+section {
+  margin-top: 50px;
+  height: 800px;
+  flex: 1;
+}
+section .section-title {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 150px;
+  font-size: 30px;
+}
+section .cards {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+section .card {
+  width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+section .card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+section .card-content {
+  padding: 60px;
+  font-family: "Montserrat", sans-serif;
+}
+section .card-content h1 {
+  font-size: 25px;
+  margin: 0;
+  width: 600px;
+}
+section .card-content p {
+  font-size: 30px;
+  color: #ff0000;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  width: 250px;
+}
+section .button {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px;
+  font-family: "Montserrat", sans-serif;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+@media screen and (max-width: 1300px) {
+  section .cards {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40%;
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 900px) {
+  section .section-title {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 50px;
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 800px) {
+  section .cards {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 630px) {
+  section .section-title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    font-size: 30px;
+    margin-left: 30%;
+  }
+  section .cards {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    gap: 40px;
+  }
+  section .card-content h1 {
+    font-size: 25px;
+    width: 200px;
+  }
+}
+@media screen and (max-width: 530px) {
+  section .cards {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main-header {
+    display: flex;
+    gap: 0px;
+    margin-top: 0px;
+  }
+  .main-header .right-photo img {
+    width: 200px;
+    height: 200px;
+  }
+}
+footer {
+  margin-top: 30px;
+  padding: 20px;
+  padding-top: 40px;
+  background-color: #120f0f;
+  text-align: center;
+}
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+footer .footer-content .footer-left,
+footer .footer-content .footer-right {
+  flex: 1;
+  color: white;
+}
+footer .footer-content .social-icons {
+  display: flex;
+  margin-top: 30px;
+  margin-left: 35%;
+  gap: 50px;
+  font-size: 24px;
+}
+footer .footer-content .social-icons a {
+  color: #ffffff;
+}
+footer .footer-bottom {
+  margin-top: 20px;
+  color: #777;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 515px) {
+  .footer-content {
+    padding-top: 40px;
+  }
+  .social-icons {
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 40px;
+  }
+  .footer-bottom {
+    margin-top: 60px;
+  }
+}/*# sourceMappingURL=global.css.map */
